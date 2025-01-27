@@ -1,0 +1,40 @@
+{%extends "base.html"%}
+{% block content %}
+<h2>İslam Bilim İnsanları</h2>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .main-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 100px;
+        }
+        .subtitle {
+            font-size: 24px;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        .divider {
+            width: 50%;
+            height: 2px;
+            background-color: #3498db;
+            margin: 30px auto;
+        }
+    </style
+    <ul>
+        {% for post in posts %}
+            <li>
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.content }}</p>
+                <p><em>{{ post.created_at }}</em></p>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

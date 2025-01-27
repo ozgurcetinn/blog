@@ -1,0 +1,97 @@
+
+{%extends "base.html"%}
+{% block content %}
+{% load static %}
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    .profile-img {
+        width: 150px; /* Set the width of the image */
+        height: 150px; /* Set the height of the image */
+        border-radius: 50%; /* Makes the image round */
+        object-fit: cover; /* Ensures the image covers the circle properly */
+        display: block;
+        margin: 1rem auto; /* Centers the image */
+    }
+
+    header {
+        background: #4CAF50;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #4CAF50;
+    }
+
+    img {
+        max-width: 150px;
+        border-radius: 50%;
+        display: block;
+        margin: 1rem auto;
+    }
+
+    .skills {
+        list-style: none;
+        padding: 0;
+    }
+
+    .skills li {
+        background: #4CAF50;
+        color: white;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        border-radius: 5px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        color: #666;
+    }
+</style>
+</head>
+<header>
+    <h2>Hakkımda</h2>
+</header>
+
+<div class="container">
+    <img src="{% static 'blog/luffy.jpg' %}" alt="Profile Picture" class="profile-img">
+
+    <p>Merhabalar Herkese ben  <strong>Özgür</strong>.Aklımda uzun zamandır var olan islam bilim adamları websitesini kurmak istiyordum, şu an için başlangıç aşamasındayız. Python öğrenirken Django framework kullanarak bir proje geliştirmek istedim ve bu siteyi oluşturdum. Aslında içerik olarak çok başlangıç düzeyinde fakat kullanıcı işlemleri kayıt olmak ve giriş çıkış işlemleri hakkında beni geliştirdi diyebilirim. Kullanıcı bazlı yorum yapma ve fıhrist tarzı bir şeyler eklemeyi düşünüyorum inşallah kısa zamanda yapabilirim. Sağlıcakla kalın 😊  </p>
+    <p>Sitenin ismini de tevafuken tevafuk koymuş bulundum hayırlı olsun 👌😊</p>
+
+    <h3>Son okuduğum kitaplar</h3>
+    <ul class="">
+        <li>İki Şehrin Hikayesi</li>
+        <li>Uğultulu Tepeler</li>
+        <li>Gazap Üzümleri</li>
+    </ul>
+
+    <h3>Bana Ulaşın</h3>
+    <p>Görüş ve önerilirinizi buradan yazabilirsiniz: <a href="mailto:ozgurcet71@gmail.com">ozgurcet71@gmail.com</a></p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Ozgur Cetin. Tüm hakları saklıdır.</p>
+</footer>
+
+
+{%endblock%}
