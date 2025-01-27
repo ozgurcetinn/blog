@@ -1,0 +1,1 @@
+Selamlar, kendi blog sayfamı yaptım user tarafında giriş çıkış ve kayıt işlemlerini kontrol ettim. Biraz daha backend kısmını yaptım inşallah sunucuda ayağa kaldırıcam, cyorum ve fıhrist kısmı da eklemek istiyorum bakalım neler olacak :)))
